@@ -12,7 +12,7 @@ const Contact = () => {
          <p><b>Contact Person:</b> Asadullah Shafique</p>
           <p><b>Whatsapp:</b> +92 321 377 1445</p>
           <p><b>Email:</b> <a href="mailto:asadullahshafique@hotmail.com">asadullahshafique@hotmail.com</a></p>
-               
+          </div>        
   ];
 
   return (
@@ -25,18 +25,7 @@ const Contact = () => {
         I am looking to strive for an executive position in a company that promises career growth & development.  I'm a mature team worker & adaptable to all challenging situations. I can work well both in a team environment and using my initiative. I am an enthusiastic, self-motivated & hard-working.
         </p>
         <br></br>
-        <div className='socials flex flex-row gap-2'>
-        <br></br>
-          {socials.map((social, index) => (
-            <Link key={index} href={social.path} target='_blank'>
-              <img src={`icons/${social.icon}`}
-                alt={social.path.split('/')[2]}
-                className='w-6 h-6 hover:brightness-200'
-                style={{ filter: 'brightness(0) invert(1)' }}
-              />
-            </Link>
-          ))}
-        </div>
+       
       </div>
       <div>
         <form className='flex flex-col' >
@@ -85,8 +74,10 @@ const Contact = () => {
     </section>
   );
 
+};
+
+export default Contact;
 
 
 
-
-         
+        

@@ -1,8 +1,5 @@
 "use client";
 import React, { useTransition, useState } from 'react';
-import Image from 'next/image';
-import images from '../../../public/images/about-image.webp'; 
-
 
 const About = () => {
   
